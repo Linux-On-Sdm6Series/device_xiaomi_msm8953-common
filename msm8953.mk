@@ -68,10 +68,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # ANT
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library \
-    libantradio
+# PRODUCT_PACKAGES += \
+#     AntHalService \
+#     com.dsi.ant.antradio_library \
+#     libantradio
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -113,12 +113,12 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.msm8953 \
-    libmm-qcamera \
-    Snap
+    libmm-qcamera
+#     Snap
 
 # Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
+# PRODUCT_PACKAGES += \
+#     android.hardware.configstore@1.0-service
 
 # Display
 PRODUCT_PACKAGES += \
@@ -140,8 +140,8 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+# PRODUCT_PACKAGES += \
+#     XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -182,8 +182,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Healthd
-PRODUCT_PACKAGES += \
-    chargeonlymode
+# PRODUCT_PACKAGES += \
+#     chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -225,8 +225,8 @@ PRODUCT_PACKAGES += \
     lights.msm8953
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -304,11 +304,11 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     librmnetctl \
     libcnefeatureconfig \
-    libxml2 \
-    telephony-ext
+    libxml2
+#     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# PRODUCT_BOOT_JARS += \
+#     telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -332,8 +332,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
@@ -376,10 +376,10 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \
-    hostapd \
+#     hostapd \
     dhcpcd.conf \
     wificond \
-    wpa_supplicant \
+#     wpa_supplicant \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
@@ -391,5 +391,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+# PRODUCT_BOOT_JARS += \
+#     WfdCommon
